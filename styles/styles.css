@@ -26,10 +26,32 @@ body {
   visibility: hidden;
 }
 
+button,
+.details {
+  font-family: "PT Sans";
+  background-color: #756157;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color:white;
+}
+
+.nav-elements {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color:black;
+}
+
 .nav-elements a {
   color: black;
   text-decoration: none;
-  background-color: white;
 }
 
 .agitation-header {
@@ -42,7 +64,6 @@ body {
   text-transform: uppercase;
 }
 
-
 .agitation-text {
   font-weight: 400;
   font-style: Regular;
@@ -50,6 +71,10 @@ body {
   line-height: 26px;
   letter-spacing: 0%;
   text-align: center;
+}
+
+.subscribe-ag-header {
+  color:white;
 }
 
 .subscribe-ag-text {
@@ -74,15 +99,6 @@ body {
   text-align: center;
 }
 
-.nav-elements {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  letter-spacing: 0%;
-  text-transform: capitalize;
-  color:black;
-}
-
 .greeting,
 .catalog-subscribe,
 .subscribe,
@@ -102,26 +118,6 @@ body {
   background-size: 100% auto;
 }
 
-
-
-button,
-.details {
-  font-family: "PT Sans";
-  background-color: #756157;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0%;
-  text-align: center;
-  vertical-align: middle;
-  text-transform: uppercase;
-  color:white;
-}
-
-.details {
-  text-decoration: none;
-}
-
 .advantage-element{
   background-color: #83B3D31F;
 }
@@ -130,17 +126,17 @@ button,
   background-color: #83B3D333;
 }
 
+.advantage-with-picture{
+  background-color: #82B3D3;
+  color: white;
+}
+
 .comfort-element{
   background-color: #83B3D31F;
 }
 
 .comfort-element:nth-child(odd) {
   background-color: #83B3D333;
-}
-
-.advantage-with-picture{
-  background-color: #82B3D3;
-  color: white;
 }
 
 .phone-number {
@@ -152,6 +148,7 @@ button,
   text-transform: uppercase;
   font-style: normal;
 }
+
 .results-header {
   text-align: left;
 }
@@ -210,7 +207,6 @@ button,
   line-height: 24px;
   letter-spacing: 0%;
   vertical-align: middle;
-
 }
 
 .sort-method,
@@ -254,6 +250,7 @@ button,
   text-transform: uppercase;
   color: white;
 }
+
 .pagenumber-btn {
   background-color: #82B3D3;
   color: white;
@@ -272,4 +269,8 @@ button,
 .btn-fav,
 .submit_btn {
   background-color: #82B3D3;
+}
+
+.details {
+  text-decoration: none;
 }
