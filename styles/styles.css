@@ -43,9 +43,6 @@ body {
   text-transform: uppercase;
 }
 
-.subscribe-ag-header {
-  color:white;
-}
 
 .agitation-text {
   font-weight: 400;
@@ -90,6 +87,7 @@ body {
 }
 
 .greeting,
+.catalog-subscribe,
 .subscribe,
 .hotel-search {
   text-align: center;
@@ -106,6 +104,8 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
+
+
 
 button,
 .details {
