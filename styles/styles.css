@@ -1,0 +1,158 @@
+
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  background-color: white;
+}
+
+.visually-hidden {
+  color: transparent;
+}
+
+.nav-elements a {
+  color: black;
+  text-decoration: none;
+  background-color: white;
+}
+
+.agitation-header {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: PT Sans;
+  font-style: Bold;
+  line-height: 36px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.subscribe-ag-header {
+  color:white;
+}
+
+.agitation-text {
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 22px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.subscribe-ag-text {
+  color:white;
+}
+
+.card-header {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card-text {
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.nav-elements {
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color:black;
+}
+
+.greeting,
+.subscribe,
+.hotel-search {
+  text-align: center;
+}
+
+.greeting{
+  background-image: url(../images/decoration/index-back.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.subscribe {
+  background-image: url(../images/decoration/filter-background.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+button {
+  font-family: "PT Sans";
+  background-color: #756157;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color:white;
+}
+
+.advantage-element{
+  background-color: #83B3D31F;
+}
+
+.advantage-element:nth-child(even) {
+  background-color: #83B3D333;
+}
+
+.comfort-element{
+  background-color: #83B3D31F;
+}
+
+.comfort-element:nth-child(odd) {
+  background-color: #83B3D333;
+}
+
+.advantage-with-picture{
+  background-color: #82B3D3;
+  color: white;
+}
+
+.phone-number {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+.phone-number a{
+  color: black;
+  text-decoration: none;
+}
