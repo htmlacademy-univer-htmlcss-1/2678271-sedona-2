@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header>
@@ -25,6 +26,7 @@
       <section class="greeting">
         <h2 class="visually-hidden">Приветствие</h2>
         <img src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седону">
+
         <p class="agitation-header">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="agitation-text">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
 
@@ -67,38 +69,38 @@
           <p class="agitation-text">Опытный персонал и качественное обслуживание!</p>
 
           <ul class="comfort-list">
-            <li class="house">
-              <h3 class="comfort-header">Жилье</h3>
-              <p class="comfort-txt">Рекомендуем пожить в настоящем мотеле,всё как в кино!</p>
+            <li class="comfort-element">
+              <h3 class="card-header">Жилье</h3>
+              <p class="card-text">Рекомендуем пожить в настоящем мотеле,всё как в кино!</p>
             </li>
 
-            <li class="food">
-              <h3 class="comfort-header">Еда</h3>
-              <p class="comfort-txt">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+            <li class="comfort-element">
+              <h3 class="card-header">Еда</h3>
+              <p class="card-text">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
             </li>
 
-            <li class="souvenir">
-              <h3 class="comfort-header">Сувениры</h3>
-              <p class="comfort-txt">Не только китайского, но и настоящего местного производства!</p>
+            <li class="comfort-element">
+              <h3 class="card-header">Сувениры</h3>
+              <p class="card-text">Не только китайского, но и настоящего местного производства!</p>
             </li>
         </ul>
       </section>
 
       <section class="hotel-search">
-        <h2>Поиск гостиницы</h2>
+        <h2 class="visually-hidden">Поиск гостиницы</h2>
         <p class="agitation-header">Заинтересовались?</p>
-        <p class="agitation-text">Укажите предполагаемые даты  поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p class="agitation-text">Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button class="search-hotel-btn">Поиск гостиницы в Седоне</button>
       </section>
 
       <section class="subscribe">
         <h2 class="visually-hidden">Подписка на рассылку</h2>
-        <p class="subscribe-header">Подпишитесь на рассылку</p>
-        <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="agitation-header subscribe-ag-header">Подпишитесь на рассылку</p>
+        <p class="agitation-text subscribe-ag-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru/" target="_blank">
           <input name="email" type="email" placeholder="Ваш e-mail" required>
 
-          <button type="submit">Подписаться</button>
+          <button type="submit" class="submit_btn">Подписаться</button>
         </form>
       </section>
     </main>

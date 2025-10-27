@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="main-header">
@@ -18,12 +19,7 @@
       </nav>
       <ul class="header-buttons">
         <li><a href="#" class="visually-hidden">Поиск</a></li>
-        <li>
-          <a href="#" class="header-fav">
-            <span class="visually-hidden">Избранное</span>
-            <span class="fav-count">3</span>
-          </a>
-        </li>
+        <li><a href="#" class="visually-hidden">Избранное</a></li>
         <li><button class="want-here-btn">Хочу сюда!</button></li>
       </ul>
     </header>
@@ -103,7 +99,7 @@
       <section class="results-section">
         <h2 class="visually-hidden">Результаты поиска</h2>
 
-        <p class="results-header">Найдено гостиниц: <span id="hotel-count">0</span></p>
+        <p class="results-header agitation-header">Найдено гостиниц: <span id="hotel-count">1</span></p>
 
         <select class="sort-method">
           <option selected>Сначала дешёвые</option>
@@ -153,13 +149,14 @@
         </ul>
       </section>
 
-      <section class="subscribe">
+      <section class="catalog-subscribe">
         <h2 class="visually-hidden">Подписка на рассылку</h2>
-        <p class="subscribe-header">Подпишитесь на рассылку</p>
-        <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <p class="agitation-header ">Подпишитесь на рассылку</p>
+        <p class="agitation-text ">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru/" target="_blank">
           <input name="email" type="email" placeholder="Ваш e-mail" required>
-          <button type="submit">Подписаться</button>
+
+          <button type="submit" class="submit_btn">Подписаться</button>
         </form>
       </section>
     </main>
