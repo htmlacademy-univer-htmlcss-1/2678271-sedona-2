@@ -138,6 +138,7 @@ button,
 
 .comfort-element{
   background-color: #83B3D31F;
+  text-align: center;
 }
 
 .comfort-element:nth-child(odd) {
