@@ -378,6 +378,10 @@ button,
   width: 142px;
 }
 
+footer {
+  margin-top: auto;
+}
+
 .filter-form {
   display: flex;
   justify-content: space-between;
