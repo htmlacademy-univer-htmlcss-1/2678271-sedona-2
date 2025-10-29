@@ -38,9 +38,7 @@ body {
   flex-grow: 1;
 }
 
-.sedona-logo {
-  margin-left: 70px;
-}
+
 
 .navigation {
   display: flex;
@@ -49,19 +47,21 @@ body {
 }
 
 .page-container,
-.header-container {
+.header {
   width: 1200px;
   margin: 0 auto;
 }
 
 .header-container {
+  margin: 0 70px;
   display: flex;
 }
+
+
 
 .header-buttons-container{
   max-width: 268px;
   margin-left: auto;
-  margin-right: 75px;
 }
 
 button,
