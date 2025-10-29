@@ -8,27 +8,27 @@
 </head>
 
   <body>
-    <header class="main-header">
-      <a href="index.html">
+    <header>
+      <div class="header-container">
         <img src="images/logo.svg" width="140" height="70" alt="Логотип сайта" class="sedona-logo">
-      </a>
-      <nav class="navigation">
-        <ul class="nav-elements">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="#">О Седоне</a></li>
-          <li><a href="#">Гостиницы</a></li>
+        <nav class="navigation">
+          <ul class="nav-elements">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">О Седоне</a></li>
+            <li><a href="catalog.html">Гостиницы</a></li>
+          </ul>
+        </nav>
+        <ul class="header-buttons-container">
+          <li><a href="#" class="visually-hidden">Поиск</a></li>
+          <li>
+            <a href="#" class="favorite-link">
+              <span class="visually-hidden">Избранное</span>
+              <span class="favorites-count">12</span>
+            </a>
+          </li>
+          <li><button class="want-here-btn">Хочу сюда!</button></li>
         </ul>
-      </nav>
-      <ul class="header-buttons">
-        <li><a href="#" class="visually-hidden">Поиск</a></li>
-        <li>
-          <a href="#" class="favorite-link">
-            <span class="visually-hidden">Избранное</span>
-            <span class="favorites-count">12</span>
-          </a>
-        </li>
-        <li><button class="want-here-btn">Хочу сюда!</button></li>
-      </ul>
+      </div>
     </header>
 
     <main class="catalog-main main-container">

@@ -20,7 +20,6 @@ html {
   height: 100%;
 }
 
-
 body {
   margin: 0;
   display: flex;
@@ -39,22 +38,30 @@ body {
   flex-grow: 1;
 }
 
-header {
-  display: flex;
-}
-.navigation {
-  display: flex;
-  margin: 0 auto;
+.sedona-logo {
+  margin-left: 70px;
 }
 
-.page-container {
+.navigation {
+  display: flex;
+  margin-left: 25px;
+
+}
+
+.page-container,
+.header-container {
   width: 1200px;
   margin: 0 auto;
 }
 
-.header-buttons{
+.header-container {
+  display: flex;
+}
+
+.header-buttons-container{
   max-width: 268px;
   margin-left: auto;
+  margin-right: 75px;
 }
 
 button,
@@ -79,7 +86,7 @@ button,
   text-transform: capitalize;
   color:black;
 
-  width: 339px;
+  max-width: 339px;
   margin: 0;
   padding: 0;
 }
@@ -169,7 +176,7 @@ button,
 }
 
 .hotel-search {
-  padding: 96px 304px 96px 304px;
+  padding: 96px 304px;
 }
 
 .invitation-text {
@@ -369,6 +376,10 @@ button,
 
 .footer-media {
   width: 142px;
+}
+
+footer {
+  margin-top: auto;
 }
 
 .filter-form {
