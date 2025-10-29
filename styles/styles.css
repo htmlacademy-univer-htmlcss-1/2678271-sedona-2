@@ -16,7 +16,15 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
   background-color: white;
@@ -24,6 +32,36 @@ body {
 
 .visually-hidden {
   visibility: hidden;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.sedona-logo {
+  margin-left: 70px;
+}
+
+.navigation {
+  display: flex;
+  margin-left: 25px;
+
+}
+
+.page-container,
+.header-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.header-container {
+  display: flex;
+}
+
+.header-buttons-container{
+  max-width: 268px;
+  margin-left: auto;
+  margin-right: 75px;
 }
 
 button,
@@ -47,11 +85,38 @@ button,
   letter-spacing: 0%;
   text-transform: capitalize;
   color:black;
+
+  max-width: 339px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-elements a {
   color: black;
   text-decoration: none;
+}
+
+.favorite-link {
+  color: black;
+  text-decoration: none;
+}
+
+.advantage-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.advantages-element {
+  width: 400px;
+}
+
+.ag-headers{
+  padding-top: 69px;
+  padding-bottom: 69px;
 }
 
 .agitation-header {
@@ -104,6 +169,24 @@ button,
 .subscribe,
 .hotel-search {
   text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hotel-search {
+  padding: 96px 304px;
+}
+
+.invitation-text {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.subscribe,
+.catalog-subscribe {
+  padding: 96px 258px 104px 258px;
 }
 
 .greeting{
@@ -127,12 +210,21 @@ button,
 }
 
 .advantage-with-picture{
+  width: 1200px;
+  display: flex;
   background-color: #82B3D3;
   color: white;
 }
 
+.comfort-list {
+  display: flex;
+  width: 1200px;
+}
+
 .comfort-element{
+  width: 400px;
   background-color: #83B3D31F;
+  text-align: center;
 }
 
 .comfort-element:nth-child(odd) {
@@ -273,4 +365,45 @@ button,
 
 .details {
   text-decoration: none;
+}
+
+.page-footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.footer-media {
+  width: 142px;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.filter-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-input {
+  display: block;
+}
+
+.hotels-list{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hotel-card {
+  padding: 20px;
+}
+
+.search-header {
+  display: flex;
+}
+
+.sort-method{
+  margin-left: auto;
 }
