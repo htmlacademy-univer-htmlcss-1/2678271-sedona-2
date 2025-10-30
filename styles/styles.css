@@ -31,13 +31,27 @@ body {
 }
 
 .visually-hidden {
-  visibility: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .main-container {
   flex-grow: 1;
 }
 
+.sedona-logo-a {
+  height: 64px;
+}
+
+.sedona-logo {
+  position: relative;
+}
 
 
 .navigation {
@@ -57,13 +71,6 @@ body {
   display: flex;
 }
 
-
-
-.header-buttons-container{
-  max-width: 268px;
-  margin-left: auto;
-}
-
 button,
 .details {
   font-family: "PT Sans";
@@ -76,6 +83,7 @@ button,
   vertical-align: middle;
   text-transform: uppercase;
   color:white;
+  cursor: pointer;
 }
 
 .nav-elements {
@@ -86,14 +94,31 @@ button,
   text-transform: capitalize;
   color:black;
 
-  max-width: 339px;
   margin: 0;
   padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 500px;
 }
 
-.nav-elements a {
+.nav-el {
   color: black;
   text-decoration: none;
+  padding: 20px 16px;
+  display: block;
+}
+
+.header-buttons-container {
+  max-width: 268px;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.header-btn{
+  padding: 0 10px;
 }
 
 .favorite-link {
@@ -101,26 +126,18 @@ button,
   text-decoration: none;
 }
 
-.advantage-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-
-.advantages-element {
-  width: 400px;
-}
-
 .ag-headers{
-  padding-top: 69px;
-  padding-bottom: 69px;
+  padding: 69px 0;
+}
+
+.greet-image {
+  padding-top: 51px;
+  padding-bottom: 82px;
 }
 
 .agitation-header {
   font-size: 30px;
+  margin: 0;
   font-weight: 700;
   font-family: PT Sans;
   line-height: 36px;
@@ -182,6 +199,8 @@ button,
 .invitation-text {
   padding-top: 64px;
   padding-bottom: 64px;
+  max-width: 505px;
+  margin: auto;
 }
 
 .subscribe,
@@ -201,8 +220,25 @@ button,
   background-size: 100% auto;
 }
 
+.advantage-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style-type: none;
+}
+
 .advantage-element{
   background-color: #83B3D31F;
+  height: 385px;
+  width: 400px;
+}
+
+.advantage-el-text{
+  width: 230px;
+  margin: 112.5px auto 0;
 }
 
 .advantage-element:nth-child(even) {
@@ -219,12 +255,20 @@ button,
 .comfort-list {
   display: flex;
   width: 1200px;
+  list-style-type: none;
+  padding: 0;
 }
 
 .comfort-element{
   width: 400px;
+  height: 385px;
   background-color: #83B3D31F;
   text-align: center;
+}
+
+.comfort-el-filling {
+  width: 230px;
+  margin: 81px auto 0;
 }
 
 .comfort-element:nth-child(odd) {
@@ -243,6 +287,11 @@ button,
 
 .results-header {
   text-align: left;
+  margin: 56.5px 200px 46.5px 70px;
+}
+
+.phone-number{
+  padding-top: 40px;
 }
 
 .phone-number a{
@@ -257,6 +306,9 @@ button,
 }
 
 .filter-header {
+  margin: 0;
+  padding-top: 35px;
+  padding-left: 70px;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
@@ -265,6 +317,7 @@ button,
 }
 
 .current-page-name {
+  margin: 8px 0 0 111px;
   font-weight: 400;
   font-style: Regular;
   font-size: 16px;
@@ -274,6 +327,7 @@ button,
 }
 
 .filter-title {
+  margin: 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -291,6 +345,17 @@ button,
   font-size: 18px;
   line-height: 23px;
   letter-spacing: 0%;
+  list-style-type: none;
+  padding: 0;
+}
+
+.amenities-block,
+.price-block {
+  margin-right: 70px;
+}
+
+.roomtype-block{
+  margin-right: 140.15px;
 }
 
 .price-input {
@@ -299,6 +364,12 @@ button,
   line-height: 24px;
   letter-spacing: 0%;
   vertical-align: middle;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-direction: column;
+
 }
 
 .sort-method,
@@ -311,6 +382,10 @@ button,
   line-height: 21px;
   letter-spacing: 0%;
   color: #333333
+}
+
+.sort-method{
+  margin-right: 70px;
 }
 
 .hotel-name {
@@ -341,16 +416,28 @@ button,
   vertical-align: middle;
   text-transform: uppercase;
   color: white;
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
 }
 
 .pagenumber-btn {
+  display: block;
   background-color: #82B3D3;
   color: white;
   text-decoration: none;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  border-radius: 4px;
 }
 
 .dots{
   color: black;
+  display: block;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
 }
 
 .reset-btn {
@@ -369,13 +456,17 @@ button,
 
 .page-footer-container {
   display: flex;
+  height: 120px;
   width: 1200px;
   margin: 0 auto;
   justify-content: space-between;
 }
 
 .footer-media {
+  margin-top: 45px;
   width: 142px;
+  list-style-type: none;
+  display: flex;
 }
 
 footer {
@@ -383,8 +474,8 @@ footer {
 }
 
 .filter-form {
+  padding: 40px 70px 73px;
   display: flex;
-  justify-content: space-between;
 }
 
 .price-input {
@@ -392,8 +483,11 @@ footer {
 }
 
 .hotels-list{
+  padding: 0;
+  margin: 0 0 0 70px;
   display: flex;
   flex-wrap: wrap;
+  list-style-type: none;
 }
 
 .hotel-card {
@@ -402,8 +496,45 @@ footer {
 
 .search-header {
   display: flex;
+
 }
 
 .sort-method{
-  margin-left: auto;
+  margin-top: 50px;
+  width: 292px;
+  height: 49px;
+}
+
+.results-view {
+  margin-top: 50px;
+  display: flex;
+  gap: 10px;
+}
+
+.results-view input[type="radio"] {
+  display: none;
+}
+
+.results-view .option {
+  width: 48px;
+  height: 48px;
+  border: 2px solid gray;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.tg-logo {
+  padding: 12px 14.67px 12.9px;
+}
+
+.vk-logo {
+  padding: 13px 11.67px 12.9px;
+}
+
+.yt-logo {
+  padding: 11.5px 12.67px 11.5px;
+}
+
+.academy-logo {
+  margin-top: 48.5px;
 }

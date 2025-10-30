@@ -9,23 +9,23 @@
   <body>
     <header class="header">
       <div class="header-container">
-        <img src="images/logo.svg" width="140" height="70" alt="Логотип сайта" class="sedona-logo">
+        <a href="#" class="sedona-logo-a"> <img src="images/logo.svg" width="140" height="70" alt="Логотип сайта" class="sedona-logo"> </a>
         <nav class="navigation">
           <ul class="nav-elements">
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">О Седоне</a></li>
-            <li><a href="catalog.html">Гостиницы</a></li>
+            <li><a class="nav-el" href="#">Главная</a></li>
+            <li><a class="nav-el" href="#">О Седоне</a></li>
+            <li><a class="nav-el" href="catalog.html">Гостиницы</a></li>
           </ul>
         </nav>
         <ul class="header-buttons-container">
-          <li><a href="#" class="visually-hidden">Поиск</a></li>
+          <li><a href="#" class="header-btn visually-hidden">Поиск</a></li>
           <li>
-            <a href="#" class="favorite-link">
+            <a href="#" class="header-btn favorite-link">
               <span class="visually-hidden">Избранное</span>
               <span class="favorites-count">12</span>
             </a>
           </li>
-          <li><button class="want-here-btn">Хочу сюда!</button></li>
+          <li><button class="header-btn want-here-btn">Хочу сюда!</button></li>
         </ul>
       </div>
     </header>
@@ -116,13 +116,13 @@
 
             <div class="results-view">
               <input type="radio" name="view" id="large-elem" value="large" checked>
-              <label for="large-elem">Крупные</label>
+              <label for="large-elem" class="option"></label>
 
               <input type="radio" name="view" id="small-elem" value="small">
-              <label for="small-elem">Мелкие</label>
+              <label for="small-elem" class="option"></label>
 
               <input type="radio" name="view" id="list-elem" value="list">
-              <label for="list-elem">Список</label>
+              <label for="list-elem" class="option"></label>
             </div>
 
           </div>
@@ -232,9 +232,9 @@
     <footer>
       <div class="page-footer-container">
         <ul class="footer-media">
-          <li><a href="https://vk.com/htmlacademy"><img src="images/vk.svg" width="22" height="14" alt="Вк" class="media-logo"></a></li>
-          <li><a href="https://t.me/htmlacademy"><img src="images/tg.svg" alt="Тг" width="18" height="16" class="media-logo"></a></li>
-          <li><a href="https://www.youtube.com/user/htmlacademyru"><img src="images/youtube.svg" width="22" height="16" alt="Ютуб" class="media-logo"></a></li>
+          <li><a href="https://vk.com/htmlacademy"><img src="images/vk.svg" width="22" height="14" alt="Вк" class="media-logo vk-logo"></a></li>
+          <li><a href="https://t.me/htmlacademy"><img src="images/tg.svg" alt="Тг" width="18" height="16" class="media-logo tg-logo"></a></li>
+          <li><a href="https://www.youtube.com/user/htmlacademyru"><img src="images/youtube.svg" width="22" height="16" alt="Ютуб" class="media-logo yt-logo"></a></li>
         </ul>
         <address class="phone-number">
           <a href="tel:+78128121212">+7 (812) 812-12-12</a>
