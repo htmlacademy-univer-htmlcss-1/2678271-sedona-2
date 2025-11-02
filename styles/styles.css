@@ -128,6 +128,7 @@ button,
 
 .ag-headers{
   padding: 69px 0;
+  max-width: 655px;
 }
 
 .greet-image {
@@ -153,6 +154,7 @@ button,
   line-height: 26px;
   letter-spacing: 0%;
   text-align: center;
+  color: #333333;
 }
 
 .subscribe-ag-header {
@@ -231,7 +233,8 @@ button,
 }
 
 .advantage-element{
-  background-color: #83B3D31F;
+  background-color: #83B3D333;
+
   height: 385px;
   width: 400px;
 }
@@ -242,7 +245,7 @@ button,
 }
 
 .advantage-element:nth-child(even) {
-  background-color: #83B3D333;
+  background-color: #83B3D31F;
 }
 
 .advantage-with-picture{
@@ -271,8 +274,8 @@ button,
   margin: 81px auto 0;
 }
 
-.comfort-element:nth-child(odd) {
-  background-color: #83B3D333;
+.comfort-element:nth-child(even) {
+  background-color: white;
 }
 
 .phone-number {
