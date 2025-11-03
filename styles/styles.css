@@ -20,6 +20,13 @@ html {
   height: 100%;
 }
 
+.shadow-wrapper {
+  box-shadow: 0 0 15px 0 #00000033;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+}
+
 body {
   margin: 0;
   display: flex;
@@ -27,7 +34,7 @@ body {
   min-height: 100%;
   font-family: "PT Sans", sans-serif;
   font-weight: 400;
-  background-color: white;
+  background-color: #F2F2F2;
 }
 
 .visually-hidden {
@@ -172,6 +179,9 @@ button,
   letter-spacing: 0%;
   text-align: center;
   text-transform: uppercase;
+  display: inline-block;
+  width: 180px;
+
 }
 
 .card-text {
@@ -260,6 +270,7 @@ button,
   width: 1200px;
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .comfort-element{
@@ -539,5 +550,5 @@ footer {
 }
 
 .academy-logo {
-  margin-top: 48.5px;
+  margin: 48.5px 70px 0 0;
 }
