@@ -332,7 +332,7 @@ button,
 }
 
 .current-page-name {
-  margin: 8px 0 0 111px;
+  margin: 0 0 0 10px;
   font-weight: 400;
   font-style: Regular;
   font-size: 16px;
@@ -340,6 +340,35 @@ button,
   letter-spacing: 0%;
   color: white;
 }
+
+.back-navigation {
+  margin:0;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+.back-nav-container {
+  margin: 8px 0 0 70px;
+  display: flex;
+  height: 21px;
+}
+
+.home-icon {
+  width: 12px;
+  height: 12px;
+  align-self: center;
+  background-color: white;
+}
+
+.right-arrow {
+  width: 12px;
+  height: 12px;
+  align-self: center;
+  background-color: white;
+  margin-left: 10px;
+}
+
 
 .filter-title {
   margin: 0;
