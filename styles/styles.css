@@ -267,6 +267,7 @@ button,
 
 .comfort-list {
   display: flex;
+  flex-wrap: wrap;
   width: 1200px;
   list-style-type: none;
   padding: 0;
