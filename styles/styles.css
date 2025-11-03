@@ -300,9 +300,41 @@ button,
   font-style: normal;
 }
 
+.search-header {
+  display: flex;
+  margin: 50px 70px 40px 70px;
+}
+
 .results-header {
+  margin-top: 6.5px;
   text-align: left;
-  margin: 56.5px 200px 46.5px 70px;
+  min-width: 338px;
+  padding: 0 200px 0 0;
+  display: block;
+}
+
+.sort-method{
+  width: 292px;
+  height: 49px;
+  margin-right: 70px;
+}
+
+.results-view {
+  /* margin-top: 50px; */
+  display: flex;
+  gap: 10px;
+}
+
+.results-view input[type="radio"] {
+  display: none;
+}
+
+.results-view .option {
+  width: 48px;
+  height: 48px;
+  border: 2px solid gray;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .phone-number{
@@ -428,9 +460,7 @@ button,
   color: #333333
 }
 
-.sort-method{
-  margin-right: 70px;
-}
+
 
 .hotel-name {
   font-weight: 700;
@@ -536,36 +566,22 @@ footer {
 
 .hotel-card {
   padding: 20px;
-}
-
-.search-header {
-  display: flex;
-
-}
-
-.sort-method{
-  margin-top: 50px;
-  width: 292px;
-  height: 49px;
-}
-
-.results-view {
-  margin-top: 50px;
-  display: flex;
-  gap: 10px;
-}
-
-.results-view input[type="radio"] {
-  display: none;
-}
-
-.results-view .option {
-  width: 48px;
-  height: 48px;
-  border: 2px solid gray;
+  border: 1px solid #E6E6E6;
   border-radius: 4px;
-  cursor: pointer;
+  margin: 0 20px 20px 0;
 }
+
+.hotel-card:nth-child(3n) {
+  margin: 0 0 20px 0;
+}
+
+
+
+
+
+
+
+
 
 .tg-logo {
   padding: 12px 14.67px 12.9px;
