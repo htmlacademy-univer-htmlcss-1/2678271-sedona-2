@@ -957,3 +957,8 @@ input[type="email"]::placeholder {
 .academy-logo:active path {
   fill: #7561574D;
 }
+
+.pagination li:first-child a {
+  color: black;
+  background-color: #F2F2F2;
+}
