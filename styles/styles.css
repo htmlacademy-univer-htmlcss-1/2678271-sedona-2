@@ -345,6 +345,25 @@ button:active,
   text-align: center;
   text-transform: uppercase;
   font-style: normal;
+
+  padding-top: 40px;
+}
+
+.phone-number a{
+  color: black;
+  text-decoration: none;
+}
+
+.phone-number:hover a{
+  color:#756157;
+}
+
+.phone-number:focus a{
+  color:#756157;
+}
+
+.phone-number:active a{
+  color:#7561574D;
 }
 
 .search-header {
@@ -439,14 +458,7 @@ button:active,
   background-position: center center;
 }
 
-.phone-number{
-  padding-top: 40px;
-}
 
-.phone-number a{
-  color: black;
-  text-decoration: none;
-}
 
 .filter-section {
   background-image: url(../images/decoration/hotel-filtr.png);
@@ -691,13 +703,6 @@ button:active,
   justify-content: space-between;
 }
 
-.footer-media {
-  margin-top: 45px;
-  width: 142px;
-  list-style-type: none;
-  display: flex;
-}
-
 footer {
   margin-top: auto;
 }
@@ -711,17 +716,48 @@ footer {
   display: block;
 }
 
+.footer-media {
+  margin: 45px 0 0 70px;
+  width: 142px;
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
 
 .tg-logo {
   padding: 12px 14.67px 12.9px;
+  display: block;
 }
 
 .vk-logo {
   padding: 13px 11.67px 12.9px;
+  display: block;
 }
 
 .yt-logo {
   padding: 11.5px 12.67px 11.5px;
+  display: block;
+}
+
+.yt-logo path,
+.tg-logo path,
+.vk-logo path {
+  fill: #83B3D3;
+}
+
+.yt-logo path:hover,
+.tg-logo path:hover,
+.vk-logo path:hover,
+.yt-logo path:focus,
+.tg-logo path:focus,
+.vk-logo path:focus {
+  fill: #68A2CA;
+}
+
+.yt-logo path:active,
+.tg-logo path:active,
+.vk-logo path:active {
+  fill: #68A2CA4D;
 }
 
 .academy-logo {
