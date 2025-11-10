@@ -101,10 +101,7 @@ button,
 }
 
 button:hover,
-.details:hover {
-  background-color: #615048;
-}
-
+.details:hover,
 button:focus,
 .details:focus {
   background-color: #615048;
@@ -380,15 +377,14 @@ button:active,
   box-sizing: border-box;
 }
 
-.sort-method:hover{
+.sort-method:hover,
+.sort-method:focus {
   border-color: #68A2CA;
 }
 
-.sort-method:focus{
-  border-color: #68A2CA;
+.sort-method:focus {
   outline: none;
 }
-
 
 .results-view {
   margin-left: 70px;
@@ -415,12 +411,11 @@ button:active,
   border-color: black;
 }
 
-.option:hover {
+.option:hover,
+.option:active  {
   border-color: #000000;
 }
-.option:active {
-  border-color: #000000;
-}
+
 .option:focus {
   border-color: #68A2CA;
 }
@@ -518,7 +513,6 @@ button:active,
   position: relative;
   color: white;
 }
-
 
 .filter-title {
   margin: 0;
@@ -638,17 +632,12 @@ button:active,
   line-height: 60px;
 }
 
-
 .reset-btn {
   color: rgba(255, 255, 255, 1);
   background-color: transparent;
 }
 
-.reset-btn:hover {
-  color: rgba(255, 255, 255, 0.6);
-  background-color: transparent;
-}
-
+.reset-btn:hover,
 .reset-btn:focus {
   color: rgba(255, 255, 255, 0.6);
   background-color: transparent;
@@ -669,10 +658,7 @@ button:active,
 .apply-btn:hover,
 .btn-fav:hover,
 .submit_btn:hover,
-.pagenumber-btn:hover{
-  background-color: #68A2CA;
-}
-
+.pagenumber-btn:hover,
 .apply-btn:focus,
 .btn-fav:focus,
 .submit_btn:focus,
@@ -833,10 +819,7 @@ button[data-favorited="true"]{
   background-color: #7DB54F;
 }
 
-button[data-favorited="true"]:hover {
-  background-color: #6C9E42;
-}
-
+button[data-favorited="true"]:hover,
 button[data-favorited="true"]:focus {
   background-color: #6C9E42;
 }
@@ -926,12 +909,12 @@ input[type="email"] {
   box-sizing: border-box;
 }
 
-input[type="email"]:hover {
+input[type="email"]:hover,
+input[type="email"]:focus {
   background-color: #E6E6E6;
 }
 
 input[type="email"]:focus {
-  background-color: #E6E6E6;
   outline: 3px solid #83B3D3;
   outline-offset: -1px;
 }
@@ -966,10 +949,7 @@ input[type="email"]::placeholder {
   fill: black;
 }
 
-.academy-logo:hover path {
-  fill: #756157;
-}
-
+.academy-logo:hover path,
 .academy-logo:focus path {
   fill: #756157;
 }
