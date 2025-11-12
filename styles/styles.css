@@ -998,7 +998,7 @@ input[type="email"]::placeholder {
   fill: #7561574D;
 }
 
-.pagination li:first-child a {
+.pagination .current{
   color: black;
   background-color: #F2F2F2;
 }
