@@ -217,6 +217,10 @@ button:active,
   color:white;
 }
 
+.subscribe-block {
+  width: 475px;
+}
+
 .card-header {
   font-weight: 700;
   font-size: 24px;
