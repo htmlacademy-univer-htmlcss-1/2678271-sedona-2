@@ -307,7 +307,7 @@ button:active,
 
 .advantage-el-text{
   width: 230px;
-  margin: 112.5px auto 0;
+  margin: 112px auto 0;
 }
 
 .advantage-element:nth-child(even) {
@@ -381,7 +381,7 @@ button:active,
 }
 
 .results-header {
-  margin-top: 6.5px;
+  margin-top: 6px;
   text-align: left;
   min-width: 338px;
   padding: 0 200px 0 0;
@@ -582,11 +582,11 @@ button:active,
 }
 
 .roomtype-block{
-  margin-right: 140.15px;
+  margin-right: 140px;
 }
 
 .roomtype-block{
-  margin-right: 140.15px;
+  margin-right: 140px;
 }
 
 .price-range {
@@ -879,17 +879,17 @@ footer {
 }
 
 .tg-logo {
-  padding: 12px 14.67px 12.9px;
+  padding: 12px 15px 13px;
   display: block;
 }
 
 .vk-logo {
-  padding: 13px 11.67px 12.9px;
+  padding: 12px 15px 13px;
   display: block;
 }
 
 .yt-logo {
-  padding: 11.5px 12.67px 11.5px;
+  padding: 12px 13px 12px;
   display: block;
 }
 
@@ -915,7 +915,7 @@ footer {
 }
 
 .academy-logo {
-  margin: 48.5px 70px 0 0;
+  margin: 48px 70px 0 0;
 }
 
 .hotels-list{
