@@ -1293,16 +1293,6 @@ input:checked + .fake::after {
   border: none;
 }
 
-.fake-radio:hover,
-.fake:hover {
-  opacity: 0.6;
-}
-
-.fake-radio:active,
-.fake:active {
-  opacity: 0.3;
-}
-
 input:focus + .fake-radio,
 input:focus + .fake {
   outline: 3px solid #83B3D3;
@@ -1573,4 +1563,14 @@ input[type="date"]::-moz-calendar-picker-indicator {
 
 .i_container:hover .tooltip{
   display: block;
+}
+
+.radio:hover,
+.check:hover {
+  opacity: 0.6;
+}
+
+.radio:active,
+.check:active {
+  opacity: 0.3;
 }
