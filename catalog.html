@@ -115,18 +115,24 @@
 
               <div class="filter-block price-block">
                 <h3 class="filter-title">Стоимость, ₽:</h3>
-                <div class="price-range"> <!-- Разделить тут на 2 див -->
-                  <label for="price_from" class="price-label price-label-from">от</label>
-                  <input type="number" name="price_from" id="price_from" value="0" class="price-input price-input-from">
-                  <label for="price_to" class="price-label price-label-to">до</label>
-                  <input type="number" name="price_to" id="price_to" value="9000" class="price-input price-input-to">
+                <div class="price-range">
+                  <div class="price-range-from">
+                    <label for="price_from" class="price-label price-label-from">от</label>
+                    <input type="number" name="price_from" id="price_from" value="0" class="price-input price-input-from">
+                  </div>
+                  <div class="price-range-to">
+                    <label for="price_to" class="price-label price-label-to">до</label>
+                    <input type="number" name="price_to" id="price_to" value="9000" class="price-input price-input-to">
+                  </div>
                 </div>
 
                 <div class="slider">
                   <div class="slider-line"></div>
-                  <div class="slider-line-value"></div>
-                  <button type="button" class="slider-btn slider-start-btn"></button>
-                  <button type="button" class="slider-btn slider-end-btn"></button>
+                  <div class="slider-line-value" style="left: 0; width: 207px;">
+                    <button type="button" class="slider-btn slider-start-btn"></button>
+                    <button type="button" class="slider-btn slider-end-btn"></button>
+                  </div>
+
                 </div>
               </div>
 
@@ -170,7 +176,7 @@
                 <p class="hotel-price-text">От <span>4000</span> ₽</p>
 
                 <div class="hotel-buttons">
-                  <a href="#" class="details">Подробнее</a>
+                  <a href="#" class="details btn-a">Подробнее</a>
                   <button type="button" class="btn-fav" data-favorited="false">
                     В избранное
                   </button>
