@@ -206,9 +206,9 @@
 
         <section class="modal-content">
 
-          <button class="modal-close-button">
+          <a href="index.html" class="modal-close-button">
             <span class="visually-hidden">Закрыть</span>
-          </button>
+          </a>
 
           <h2 class="agitation-header modal-header">Поиск гостиницы в седоне</h2>
 
@@ -216,14 +216,20 @@
               <div class="date-field-p">
                 <label class="modal-label date-label" for="start-date">Дата заезда:</label>
                 <div class="date-input-block">
-                  <input class="date-field field" type="date" value="2025-11-16" id="start-date" name="start-date" placeholder="">
+                  <div class="date-input">
+                    <input class="date-field field" type="date" value="2020-04-27" id="start-date" name="start-date" placeholder="">
+                    <button type="button" class="not-state-btn calendar-btn"></button>
+                  </div>
                   <p class="warning error" id="name-error">Мы не можем отправить вас в прошлое.</p>
                 </div>
               </div>
               <div class="date-field-p">
                 <label class="modal-label date-label" for="end-date">Дата выезда:</label>
                 <div class="date-input-block">
-                  <input class="date-field field" type="date" value="2025-11-16" id="end-date" name="end-date" placeholder="">
+                  <div class="date-input">
+                    <input class="date-field field" type="date" value="2021-09-01" id="end-date" name="end-date" placeholder="">
+                    <button type="button" class="not-state-btn calendar-btn"></button>
+                  </div>
                   <p class="warning" id="name-error">На эти даты есть свободные номера. Пока есть.</p>
                 </div>
               </div>
@@ -232,12 +238,18 @@
                 <div class="adult">
                   <label class="people-label modal-label" for="end-date">Взрослые:</label>
                   <div class="input-container">
-                    <button class="add-button" type="button" aria-label="Добавить">
-                      <span class="plus"></span>
+                    <button class="minus-button not-state-btn" type="button" aria-label="Отнять">
+                      <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0" y="6" width="14" height="2" fill="#756157" fill-opacity="0.3"/>
+                      </svg>
                     </button>
-                    <input class="people-field field" type="number" value="0" id="adult-counter" name="adult-counter" placeholder="">
-                    <button class="minus-button" type="button" aria-label="Отнять">
-                      <span class="minus"></span>
+
+                    <input class="people-field field" type="number" value="2" id="adult-counter" name="adult-counter" placeholder="">
+
+                    <button class="add-button not-state-btn" type="button" aria-label="Добавить">
+                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                      </svg>
                     </button>
                   </div>
                 </div>
@@ -245,16 +257,28 @@
                   <label class="people-label modal-label" for="end-date">Дети:</label>
                   <div class="i_container">
                     <abbr title="Дополнительная информация"></abbr>
+                    <div class="tooltip">
+                      <div class="tooltip-arrow"></div>
+                      <div class="tooltip-main">
+                        Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.
+                      </div>
+                    </div>
                   </div>
                   <div class="input-container">
-                    <button class="add-button" type="button" aria-label="Добавить">
-                      <span class="plus"></span>
+
+                    <button class="minus-button not-state-btn" type="button" aria-label="Отнять">
+                      <svg width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0" y="6" width="14" height="2" fill="#756157" fill-opacity="0.3"/>
+                      </svg>
                     </button>
 
-                    <input class="people-field field" type="number" value="0" id="child-counter" name="child-counter" placeholder="">
+                    <input class="people-field field" type="number" value="2" id="child-counter" name="child-counter" placeholder="">
 
-                    <button class="minus-button" type="button" aria-label="Отнять">
-                      <span class="minus"></span>
+                    <button class="add-button not-state-btn" type="button" aria-label="Добавить">
+                      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 6H8V0H6V6H0V8H6V14H8V8H14V6Z" fill="#756157" fill-opacity="0.3"/>
+                      </svg>
+
                     </button>
                   </div>
                 </div>
