@@ -63,20 +63,23 @@
                 <h3 class="filter-title">Инфраструктура:</h3>
                 <ul class="amenities-list">
                   <li>
-                    <label>
+                    <label class="check">
                       <input type="checkbox" name="amenities" value="wifi">
+                      <span class="fake"></span>
                       Wi-Fi
                     </label>
                   </li>
                   <li>
-                    <label>
+                    <label class="check">
                       <input type="checkbox" name="amenities" value="parking">
+                      <span class="fake"></span>
                       Парковка
                     </label>
                   </li>
                   <li>
-                    <label>
+                    <label class="check">
                       <input type="checkbox" name="amenities" value="pool">
+                      <span class="fake"></span>
                       Бассейн
                     </label>
                   </li>
@@ -87,20 +90,23 @@
                 <h3 class="filter-title">Тип жилья:</h3>
                 <ul class="roomtype-list">
                   <li>
-                    <label>
+                    <label class="radio">
                       <input type="radio" name="roomtype" value="hotel">
+                      <span class="fake-radio"></span>
                       Гостиница
                     </label>
                   </li>
                   <li>
-                    <label>
+                    <label class="radio">
                       <input type="radio" name="roomtype" value="motel">
+                      <span class="fake-radio"></span>
                       Мотель
                     </label>
                   </li>
                   <li>
-                    <label>
+                    <label class="radio">
                       <input type="radio" name="roomtype" value="apartment">
+                      <span class="fake-radio"></span>
                       Апартаменты
                     </label>
                   </li>
@@ -110,10 +116,23 @@
               <div class="filter-block price-block">
                 <h3 class="filter-title">Стоимость, ₽:</h3>
                 <div class="price-range">
-                  <label for="price_from" class="price-label">от</label>
-                  <input type="number" name="price_from" id="price_from" value="0" class="price-input">
-                  <label for="price_to" class="price-label">до</label>
-                  <input type="number" name="price_to" id="price_to" value="10000" class="price-input">
+                  <div class="price-range-from">
+                    <label for="price_from" class="price-label price-label-from">от</label>
+                    <input type="number" name="price_from" id="price_from" value="0" class="price-input price-input-from">
+                  </div>
+                  <div class="price-range-to">
+                    <label for="price_to" class="price-label price-label-to">до</label>
+                    <input type="number" name="price_to" id="price_to" value="9000" class="price-input price-input-to">
+                  </div>
+                </div>
+
+                <div class="slider">
+                  <div class="slider-line"></div>
+                  <div class="slider-line-value" style="left: 0; width: 207px;">
+                    <button type="button" class="slider-btn slider-start-btn"></button>
+                    <button type="button" class="slider-btn slider-end-btn"></button>
+                  </div>
+
                 </div>
               </div>
 
@@ -157,7 +176,7 @@
                 <p class="hotel-price-text">От <span>4000</span> ₽</p>
 
                 <div class="hotel-buttons">
-                  <a href="#" class="details">Подробнее</a>
+                  <a href="#" class="details btn-a">Подробнее</a>
                   <button type="button" class="btn-fav" data-favorited="false">
                     В избранное
                   </button>
